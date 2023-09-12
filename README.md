@@ -1,5 +1,6 @@
 # embassy_template
-Based on [cortex-m-quickstart](https://github.com/rust-embedded/cortex-m-quickstart.git).
+Based on [cortex-m-quickstart](https://github.com/rust-embedded/cortex-m-quickstart.git) and [embassy-rp-skeleton
+](https://github.com/SupImDos/embassy-rp-skeleton.git).
 Created for NUCLEO-F103RB board.
 
 Provided example code contains:
@@ -34,6 +35,9 @@ If you have only `main.rs` file:
 `cargo run`
 
 To build/run `release` version just add `--release` to command.
+
+Sometimeas there is error when connecting second time to target. 
+If so, add `--connect-under-reset` to your runner in `.cargo/config.toml`.
 
 ## Project configuration
 ### Target
