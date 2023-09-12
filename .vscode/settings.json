@@ -14,7 +14,7 @@
   //"rust-analyzer.cargo.target": "thumbv8m.main-none-eabihf",
   "rust-analyzer.cargo.features": [
     // Uncomment if the example has a "nightly" feature.
-    //"nightly",
+    "nightly",
   ],
   "rust-analyzer.linkedProjects": [
     // Uncomment ONE line for the chip you want to work on.

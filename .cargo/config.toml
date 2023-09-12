@@ -1,13 +1,21 @@
 [target.'cfg(all(target_arch = "arm", target_os = "none"))']
-# replace STM32F103C8 with your chip as listed in `probe-rs chip list`
+# replace STM32F103RB with your chip as listed in `probe-rs chip list`
 runner = "probe-rs run --chip STM32F103RB"
+# runner = "probe-rs run --chip STM32F072RBTx"
 
 [build]
-target = "thumbv7m-none-eabi"
+# Pick ONE of these default compilation targets
+# target = "thumbv6m-none-eabi"        # Cortex-M0 and Cortex-M0+
+ target = "thumbv7m-none-eabi"        # Cortex-M3
+# target = "thumbv7em-none-eabi"       # Cortex-M4 and Cortex-M7 (no FPU)
+# target = "thumbv7em-none-eabihf"     # Cortex-M4F and Cortex-M7F (with FPU)
+# target = "thumbv8m.base-none-eabi"   # Cortex-M23
+# target = "thumbv8m.main-none-eabi"   # Cortex-M33 (no FPU)
+# target = "thumbv8m.main-none-eabihf" # Cortex-M33 (with FPU)
 
 [env]
 DEFMT_LOG = "trace"
 
 [profile.release]
 # Allows defmt to display log locations even in release
-debug = false
+debug = true
