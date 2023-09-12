@@ -1,6 +1,9 @@
 # embassy_template
-Based on [cortex-m-quickstart](https://github.com/rust-embedded/cortex-m-quickstart.git) and [embassy-rp-skeleton](https://github.com/SupImDos/embassy-rp-skeleton.git).
-Created for NUCLEO-F103RB board.
+[Embassy](https://github.com/embassy-rs/embassy.git) rust template for STM32 devices.
+Can be used with `cargo generate`.
+
+## Hardware
+Created for NUCLEO-F103RB board but can be modified and used in any STM32 device.
 
 ## Install
 If you are new in rust embedded then follow this rust installation guide:
@@ -42,4 +45,7 @@ Useful link:
 ## Limitations
 File `rust-toolchain.toml` is copy of `embassy/rust-toolchain.toml`.
 If Embassy change toolchain (contents of files are different) than you have to copy `embassy/rust-toolchain.toml` to `rust-toolchain.toml`.
+
+## Inspiration
+Based on [cortex-m-quickstart](https://github.com/rust-embedded/cortex-m-quickstart.git) and [embassy-rp-skeleton](https://github.com/SupImDos/embassy-rp-skeleton.git).
 
