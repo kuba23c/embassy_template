@@ -38,8 +38,3 @@ lto = true # better optimizations
 name = "{{project-name}}"
 test = false
 bench = false
-
-[[bin]]
-name = "user_led"
-test = false
-bench = false
