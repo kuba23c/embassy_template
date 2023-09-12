@@ -24,6 +24,7 @@ async fn main(_spawner: Spawner) {
         info!("high");
         user_led.set_high();
         os_delay(500).await;
+        
         info!("low");
         user_led.set_low();
         os_delay(500).await;
